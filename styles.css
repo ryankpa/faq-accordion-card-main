@@ -1,0 +1,37 @@
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+}
+
+img {
+  display: block;
+}
+
+p {
+  font-size: 12px;
+}
+
+#faq {
+  flex-flow: column;
+}
+#faq .panel {
+  width: 100%;
+}
+#faq .panel img {
+  display: inline;
+}
+#faq .panel input {
+  display: none;
+}
+#faq .panel p {
+  visibility: collapse;
+}
+#faq .panel select {
+  width: inherit;
+}
+
+#expand_1:checked ~ p {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=styles.css.map */

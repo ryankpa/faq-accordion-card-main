@@ -1,0 +1,60 @@
+$mobileBreakpoint: 375px;
+
+$primaryDarkBlue: hsl(238, 29%, 16%);
+$primarySoftRed: hsl(14, 88%, 65%);
+
+$gradientSoftViolet: hsl(273, 75%, 66%);
+$gradientSoftBlue: hsl(240, 73%, 65%);
+
+$neutralVeryDarkBlue: hsl(237, 12%, 33%);
+$neutralDarkBlue: hsl(240, 6%, 50%);
+
+$dividersBlue: hsl(240, 5%, 91%);
+
+$fontSize: 12px;
+$fontFamily: 'Kumbh Sans', sans-serif;
+$weightRegular: 400;
+$weightBold: 700;
+
+* {
+    font-family: $fontFamily;
+    text-align: center;
+}
+
+img {
+    display: block;
+}
+
+p {
+    font-size: $fontSize;
+}
+
+
+#faq {
+    flex-flow: column;
+
+    .panel {
+        width: 100%;
+
+        img {
+            display: inline;
+        }
+    
+        input {
+            display: none;
+        }
+    
+        p {
+            visibility: collapse;
+        }
+    
+        select {
+            width: inherit;
+        }
+    }
+}
+
+#expand_1:checked ~ p{
+    visibility: visible;
+}
+
