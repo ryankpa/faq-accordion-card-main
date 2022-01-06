@@ -1,18 +1,34 @@
+footer {
+  bottom: 0px;
+}
+
 * {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
 }
 
+body {
+  background-image: linear-gradient(#af67e9, #6565e7);
+}
+
 img {
   display: block;
 }
 
-#faq {
-  flex-flow: column;
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
 }
+
+.faq_accordion {
+  background-color: white;
+  border-radius: 20px;
+}
+
 #faq .panel {
   width: 100%;
+  border-bottom: 1px solid #e7e7e9;
 }
 
 .down_arrow {

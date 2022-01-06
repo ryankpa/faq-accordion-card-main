@@ -16,21 +16,38 @@ $fontFamily: 'Kumbh Sans', sans-serif;
 $weightRegular: 400;
 $weightBold: 700;
 
+footer {
+    bottom: 0px;
+}
+
 * {
     font-family: $fontFamily;
     font-size: $fontSize;
     font-weight: $weightRegular;
 }
 
+body {
+    background-image: linear-gradient($gradientSoftViolet, $gradientSoftBlue);
+}
+
 img {
     display: block;
 }
 
-#faq {
-    flex-flow: column;
+h1 {
+    font-size: 3rem;
+    font-weight: $weightBold;
+}
 
+.faq_accordion {
+    background-color: white;
+    border-radius: 20px;
+}
+
+#faq {
     .panel {
         width: 100%;
+        border-bottom: 1px solid $dividersBlue;
     }
 }
 
