@@ -17,21 +17,37 @@ p {
 #faq .panel {
   width: 100%;
 }
-#faq .panel img {
+
+.down_arrow {
   display: inline;
 }
-#faq .panel input {
-  display: none;
-}
-#faq .panel p {
+
+.expandable {
   visibility: collapse;
 }
-#faq .panel select {
-  width: inherit;
+
+#expand_1:checked ~ * #expand_1_info {
+  visibility: visible;
 }
 
-#expand_1:checked ~ p {
+#expand_2:checked ~ * #expand_2_info {
   visibility: visible;
+}
+
+#expand_3:checked ~ * #expand_3_info {
+  visibility: visible;
+}
+
+#expand_4:checked ~ * #expand_4_info {
+  visibility: visible;
+}
+
+#expand_5:checked ~ * #expand_5_info {
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

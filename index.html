@@ -41,58 +41,102 @@
       <section id='faq'>
         <h1>FAQ</h1>
 
-        <section class='panel'>
-          <input type='checkbox' id='expand_1'>
-          <label for='expand_1' id='expand_btn_1'>
-            <h2>How many team members can I invite?</h2>
-            <img src='./images/icon-arrow-down.svg' alt='arrow down icon'>
-          </label>
-          <p>
-            You can invite up to 2 additional users on the Free plan. There is no limit on 
-            team members for the Premium plan.
-          </p>
-        </section>
+        <table class='panel'>
+          <input type='checkbox' id='expand_1' class="hidden">
+          <thead>
+              <tr><th>
+                <label for='expand_1'>
+                  How many team members can I invite?
+                  <img src='./images/icon-arrow-down.svg' 
+                    alt='arrow down icon'
+                    class='down_arrow'>
+                </label>
+              </th></tr>
+          </thead>
+          <tbody>
+            <tr class='expandable' id='expand_1_info'><td>
+                You can invite up to 2 additional users on the Free plan. There is no limit on 
+                team members for the Premium plan.
+            </td></tr>
+          </tbody>
+        </table>
         
-        <section class='panel'>
-          <button>
-            <h2>What is the maximum file upload size?</h2>
-            <img src='./images/icon-arrow-down.svg' alt='arrow down icon'>
-          </button>
-          <p>
-            No more than 2GB. All files in your account must fit your allotted storage space.
-          </p>
-        </section>
+        <table class='panel'>
+          <input type='checkbox' id='expand_2' class="hidden">
+          <thead>
+            <tr><th>
+              <label for='expand_2'>
+                What is the maximum file upload size?
+                <img src='./images/icon-arrow-down.svg' 
+                  alt='arrow down icon'
+                  class='down_arrow'>
+              </label>
+            </th></tr>
+          </thead>
+          <tbody>
+            <tr class='expandable' id='expand_2_info'><td>
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </td></tr>
+          </tbody>
+        </table>
       
-        <section class='panel'>
-          <button>
-            <h2>How do I reset my password?</h2>
-            <img src='./images/icon-arrow-down.svg' alt='arrow down icon'>
-          </button>
-          <p>
-            Click “Forgot password” from the login page or “Change password” from your profile page.
-            A reset link will be emailed to you.
-          </p>
-        </section>
+        <table class='panel'>
+          <input type='checkbox' id='expand_3' class="hidden">
+          <thead>
+            <tr><th>
+              <label for='expand_3'>
+                How do I reset my password?
+                <img src='./images/icon-arrow-down.svg' 
+                  alt='arrow down icon'
+                  class='down_arrow'>
+              </label>
+            </th></tr>
+          </thead>
+          <tbody>
+            <tr class='expandable' id='expand_3_info'><td>
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </td></tr>
+          </tbody>
+        </table>
   
-        <section class='panel'>
-          <button>
-            <h2>Can I cancel my subscription?</h2>
-            <img src='./images/icon-arrow-down.svg' alt='arrow down icon'>
-          </button>
-          <p>
-            Yes! Send us a message and we’ll process your request no questions asked.
-          </p>
-        </section>
+        <table class='panel'>
+          <input type='checkbox' id='expand_4' class="hidden">
+          <thead>
+            <tr><th>
+              <label for='expand_4'>
+                Can I cancel my subscription?
+                <img src='./images/icon-arrow-down.svg' 
+                  alt='arrow down icon'
+                  class='down_arrow'>
+              </label>
+            </th></tr>
+          </thead>
+          <tbody>
+            <tr class='expandable' id='expand_4_info'><td>
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </td></tr>
+          </tbody>
+        </table>
   
-        <section class='panel'>
-          <button>
-            <h2>Do you provide additional support?</h2>
-            <img src='./images/icon-arrow-down.svg' alt='arrow down icon'>
-          </button>
-          <p>
-            Chat and email support is available 24/7. Phone lines are open during normal business hours.
-          </p>
-        </section>
+        <table class='panel'>
+          <input type='checkbox' id='expand_5' class="hidden">
+          <thead>
+            <tr><th>
+              <label for='expand_5'>
+                Do you provide additional support?
+                <img src='./images/icon-arrow-down.svg' 
+                  alt='arrow down icon'
+                  class='down_arrow'>
+              </label>
+            </th></tr>
+          </thead>
+          <tbody>
+            <tr class='expandable' id='expand_5_info'><td>
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </td></tr>
+          </tbody>
+        </table>
       </section>
     </div>
   </main>

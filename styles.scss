@@ -35,26 +35,38 @@ p {
 
     .panel {
         width: 100%;
-
-        img {
-            display: inline;
-        }
-    
-        input {
-            display: none;
-        }
-    
-        p {
-            visibility: collapse;
-        }
-    
-        select {
-            width: inherit;
-        }
     }
 }
 
-#expand_1:checked ~ p{
+.down_arrow {
+    display: inline;
+}
+
+.expandable {
+    visibility: collapse;
+}
+
+#expand_1:checked ~ * #expand_1_info{
     visibility: visible;
+}
+
+#expand_2:checked ~ * #expand_2_info{
+    visibility: visible;
+}
+
+#expand_3:checked ~ * #expand_3_info{
+    visibility: visible;
+}
+
+#expand_4:checked ~ * #expand_4_info{
+    visibility: visible;
+}
+
+#expand_5:checked ~ * #expand_5_info{
+    visibility: visible;
+}
+
+.hidden {
+    display: none;
 }
 
