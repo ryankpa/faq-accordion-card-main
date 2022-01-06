@@ -63,8 +63,12 @@ h1 {
     ~ * #expand_1_label {
         font-weight: $weightBold;
     }
-    ~ * #expand_1_info{
+    ~ * #expand_1_info {
         visibility: visible;
+    }
+    ~ * #arrow_1 {
+        transform: rotate(180deg);
+        animation: .5s 1 alternate rotate;
     }
 }
 
@@ -75,6 +79,10 @@ h1 {
     ~ * #expand_2_info{
         visibility: visible;
     }
+    ~ * #arrow_2 {
+        transform: rotate(180deg);
+        animation: .5s 1 alternate rotate;
+    }
 }
 
 #expand_3:checked {
@@ -83,6 +91,10 @@ h1 {
     }
     ~ * #expand_3_info{
         visibility: visible;
+    }
+    ~ * #arrow_3 {
+        transform: rotate(180deg);
+        animation: .5s 1 alternate rotate;
     }
 }
 
@@ -93,6 +105,10 @@ h1 {
     ~ * #expand_4_info{
         visibility: visible;
     }
+    ~ * #arrow_4 {
+        transform: rotate(180deg);
+        animation: .5s 1 alternate rotate;
+    }
 }
 
 #expand_5:checked {
@@ -102,9 +118,22 @@ h1 {
     ~ * #expand_5_info{
         visibility: visible;
     }
+    ~ * #arrow_5 {
+        transform: rotate(180deg);
+        animation: .5s 1 alternate rotate;
+    }
 }
 
 .hidden {
     display: none;
 }
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}

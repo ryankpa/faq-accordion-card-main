@@ -45,12 +45,20 @@ h1 {
 #expand_1:checked ~ * #expand_1_info {
   visibility: visible;
 }
+#expand_1:checked ~ * #arrow_1 {
+  transform: rotate(180deg);
+  animation: 0.5s 1 alternate rotate;
+}
 
 #expand_2:checked ~ * #expand_2_label {
   font-weight: 700;
 }
 #expand_2:checked ~ * #expand_2_info {
   visibility: visible;
+}
+#expand_2:checked ~ * #arrow_2 {
+  transform: rotate(180deg);
+  animation: 0.5s 1 alternate rotate;
 }
 
 #expand_3:checked ~ * #expand_3_label {
@@ -59,12 +67,20 @@ h1 {
 #expand_3:checked ~ * #expand_3_info {
   visibility: visible;
 }
+#expand_3:checked ~ * #arrow_3 {
+  transform: rotate(180deg);
+  animation: 0.5s 1 alternate rotate;
+}
 
 #expand_4:checked ~ * #expand_4_label {
   font-weight: 700;
 }
 #expand_4:checked ~ * #expand_4_info {
   visibility: visible;
+}
+#expand_4:checked ~ * #arrow_4 {
+  transform: rotate(180deg);
+  animation: 0.5s 1 alternate rotate;
 }
 
 #expand_5:checked ~ * #expand_5_label {
@@ -73,9 +89,22 @@ h1 {
 #expand_5:checked ~ * #expand_5_info {
   visibility: visible;
 }
+#expand_5:checked ~ * #arrow_5 {
+  transform: rotate(180deg);
+  animation: 0.5s 1 alternate rotate;
+}
 
 .hidden {
   display: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
