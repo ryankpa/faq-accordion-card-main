@@ -18,17 +18,13 @@ $weightBold: 700;
 
 * {
     font-family: $fontFamily;
-    text-align: center;
+    font-size: $fontSize;
+    font-weight: $weightRegular;
 }
 
 img {
     display: block;
 }
-
-p {
-    font-size: $fontSize;
-}
-
 
 #faq {
     flex-flow: column;
@@ -46,24 +42,49 @@ p {
     visibility: collapse;
 }
 
-#expand_1:checked ~ * #expand_1_info{
-    visibility: visible;
+#expand_1:checked {
+    ~ * #expand_1_label {
+        font-weight: $weightBold;
+    }
+    ~ * #expand_1_info{
+        visibility: visible;
+    }
 }
 
-#expand_2:checked ~ * #expand_2_info{
-    visibility: visible;
+#expand_2:checked {
+    ~ * #expand_2_label {
+        font-weight: $weightBold;
+    }
+    ~ * #expand_2_info{
+        visibility: visible;
+    }
 }
 
-#expand_3:checked ~ * #expand_3_info{
-    visibility: visible;
+#expand_3:checked {
+    ~ * #expand_3_label {
+        font-weight: $weightBold;
+    }
+    ~ * #expand_3_info{
+        visibility: visible;
+    }
 }
 
-#expand_4:checked ~ * #expand_4_info{
-    visibility: visible;
+#expand_4:checked {
+    ~ * #expand_4_label {
+        font-weight: $weightBold;
+    }
+    ~ * #expand_4_info{
+        visibility: visible;
+    }
 }
 
-#expand_5:checked ~ * #expand_5_info{
-    visibility: visible;
+#expand_5:checked {
+    ~ * #expand_5_label {
+        font-weight: $weightBold;
+    }
+    ~ * #expand_5_info{
+        visibility: visible;
+    }
 }
 
 .hidden {
