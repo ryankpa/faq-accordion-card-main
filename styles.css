@@ -85,7 +85,8 @@
     width: fit-content;
     padding: 40px 25px;
     padding-bottom: 50px;
-    margin: 150px 25px;
+    margin: 0px 25px;
+    margin-top: 150px;
   }
   .faq_accordion h1 {
     font-size: 2.9rem;
@@ -126,7 +127,8 @@ html, body {
 
 html {
   background-image: linear-gradient(#af67e9, #6565e7);
-  height: 100vh;
+  background-size: cover;
+  min-height: 100%;
 }
 
 img {

@@ -20,7 +20,8 @@ html, body {
 
 html {
     background-image: linear-gradient($gradientSoftViolet, $gradientSoftBlue);
-    height: 100vh;
+    background-size: cover;
+    min-height: 100%;
 }
 
 img {
