@@ -1,20 +1,6 @@
-$mobileBreakpoint: 375px;
-
-$primaryDarkBlue: hsl(238, 29%, 16%);
-$primarySoftRed: hsl(14, 88%, 65%);
-
-$gradientSoftViolet: hsl(273, 75%, 66%);
-$gradientSoftBlue: hsl(240, 73%, 65%);
-
-$neutralVeryDarkBlue: hsl(237, 12%, 33%);
-$neutralDarkBlue: hsl(240, 6%, 50%);
-
-$dividersBlue: hsl(240, 5%, 91%);
-
-$fontSize: 12px;
-$fontFamily: 'Kumbh Sans', sans-serif;
-$weightRegular: 400;
-$weightBold: 700;
+@import '_variables.scss';
+@import '_accordion_collapse.scss';
+@import '_mobile.scss';
 
 footer {
     bottom: 0px;
@@ -24,10 +10,14 @@ footer {
     font-family: $fontFamily;
     font-size: $fontSize;
     font-weight: $weightRegular;
+    box-sizing: border-box;
 }
 
 body {
     background-image: linear-gradient($gradientSoftViolet, $gradientSoftBlue);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -57,71 +47,6 @@ h1 {
 
 .expandable {
     visibility: collapse;
-}
-
-#expand_1:checked {
-    ~ * #expand_1_label {
-        font-weight: $weightBold;
-    }
-    ~ * #expand_1_info {
-        visibility: visible;
-    }
-    ~ * #arrow_1 {
-        transform: rotate(180deg);
-        animation: .5s 1 alternate rotate;
-    }
-}
-
-#expand_2:checked {
-    ~ * #expand_2_label {
-        font-weight: $weightBold;
-    }
-    ~ * #expand_2_info{
-        visibility: visible;
-    }
-    ~ * #arrow_2 {
-        transform: rotate(180deg);
-        animation: .5s 1 alternate rotate;
-    }
-}
-
-#expand_3:checked {
-    ~ * #expand_3_label {
-        font-weight: $weightBold;
-    }
-    ~ * #expand_3_info{
-        visibility: visible;
-    }
-    ~ * #arrow_3 {
-        transform: rotate(180deg);
-        animation: .5s 1 alternate rotate;
-    }
-}
-
-#expand_4:checked {
-    ~ * #expand_4_label {
-        font-weight: $weightBold;
-    }
-    ~ * #expand_4_info{
-        visibility: visible;
-    }
-    ~ * #arrow_4 {
-        transform: rotate(180deg);
-        animation: .5s 1 alternate rotate;
-    }
-}
-
-#expand_5:checked {
-    ~ * #expand_5_label {
-        font-weight: $weightBold;
-    }
-    ~ * #expand_5_info{
-        visibility: visible;
-    }
-    ~ * #arrow_5 {
-        transform: rotate(180deg);
-        animation: .5s 1 alternate rotate;
-    }
 }
 
 .hidden {

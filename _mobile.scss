@@ -1,0 +1,14 @@
+@media screen and (max-width: $mobileBreakpoint) {
+    #desktop_graphic {
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .faq_accordion {
+        background-image: url('./images/bg-pattern-mobile.svg');
+        background-repeat: no-repeat;
+    }
+}
