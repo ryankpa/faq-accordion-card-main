@@ -13,11 +13,14 @@ footer {
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: linear-gradient($gradientSoftViolet, $gradientSoftBlue);
     height: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
 img {
@@ -25,7 +28,7 @@ img {
 }
 
 h1 {
-    font-size: 3rem;
+
     font-weight: $weightBold;
 }
 
@@ -39,26 +42,25 @@ h1 {
         width: 100%;
         border-bottom: 1px solid $dividersBlue;
     }
-}
 
-.down_arrow {
-    display: inline;
-}
-
-.expandable {
-    visibility: collapse;
-}
-
-.hidden {
-    display: none;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
+    th {
+        position: relative;
     }
 
-    to {
-        transform: rotate(180deg);
+    .down_arrow {
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        top: 40%;
+    }
+    
+    .expandable {
+        visibility: collapse;
+        color: $neutralDarkBlue;
+    }
+    
+    .hidden {
+        display: none;
     }
 }
+

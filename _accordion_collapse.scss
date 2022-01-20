@@ -62,3 +62,13 @@
         animation: .5s 1 alternate rotate;
     }
 }
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
