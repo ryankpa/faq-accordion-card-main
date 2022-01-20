@@ -84,6 +84,7 @@
     background-position: center top;
     width: fit-content;
     padding: 40px 25px;
+    padding-bottom: 50px;
     margin: 150px 25px;
   }
   .faq_accordion h1 {
@@ -123,7 +124,7 @@ html, body {
   padding: 0;
 }
 
-body {
+html {
   background-image: linear-gradient(#af67e9, #6565e7);
   height: 100vh;
 }
